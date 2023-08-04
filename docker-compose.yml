@@ -1,0 +1,14 @@
+version: '3.6'
+services:
+   elasticsearch:
+     image: docker.elastic.co/elasticsearch/elasticsearch:8.8.0
+     container_name: elasticsearch
+     environment:
+             - discovery.type=single-node
+             - xpack.security.enabled=false
+     ports:
+             - '9200:9200'
+     volumes:
+             - es-data-1:/usr/share/elasticsearch/data
+volumes:
+  es-data-1: {}

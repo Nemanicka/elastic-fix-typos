@@ -1,0 +1,4 @@
+alpha_centaurus
+beta_centaurus
+gamma_centaurus
+delta_centaurus

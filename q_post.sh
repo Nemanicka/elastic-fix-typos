@@ -1,5 +1,5 @@
-curl -X PUT "localhost:9200/my-index-000001/_doc/4?pretty" -H 'Content-Type: application/json' -d'
+curl -X PUT "localhost:9200/words/_doc/1?pipeline=save_word_len&pretty" -H 'Content-Type: application/json' -d'
 {
-  "title": "alpine" 
+  "word": "alphabeta" 
 }
 '
